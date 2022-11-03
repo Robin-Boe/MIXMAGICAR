@@ -58,7 +58,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 {
                     Debug.Log($"Adding a new skeleton [{humanBody.trackableId}].");
                     var newSkeletonGO = Instantiate(m_SkeletonPrefab, humanBody.transform);
-                    newSkeletonGO.transform.parent = gameObject.transform;
+                    //newSkeletonGO.transform.parent = gameObject.transform;
                     boneController = newSkeletonGO.GetComponent<BoneController>();
                     m_SkeletonTracker.Add(humanBody.trackableId, boneController);
                 }
