@@ -161,6 +161,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
                     bone.transform.localPosition = joint.localPose.position;
                     bone.transform.localRotation = joint.localPose.rotation;
                 }
+                // Store e.g. righhandmid in a variable, compare it with it's position, if a big change do something
+                // Take a button, start tracking and check movements, press button stop tracking
             }
         }
 
