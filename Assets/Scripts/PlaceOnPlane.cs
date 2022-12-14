@@ -33,6 +33,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
         /// </summary>
         public GameObject spawnedObject { get; private set; }
 
+        public GameObject HumanBodyTracking;
+
         void Awake()
         {
             m_RaycastManager = GetComponent<ARRaycastManager>();
@@ -69,6 +71,12 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 {
                     spawnedObject.transform.position = hitPose.position;
                 }
+            }
+            
+            var rightHand = HumanBodyTracking.GetComponent("RightHand");
+
+            if (rightHand != null){
+                spawnedObject.transform.position = rightHand.transform.position;
             }
         }
 
