@@ -24,7 +24,7 @@ public class magic : MonoBehaviour
         //Instantiate(fire, new Vector3(0f, 0f, 0f), Quaternion.identity);
         cubeInstance.transform.position = gameObject.transform.position + new Vector3(0, 0.2f, 0);
         fireInstance.transform.position = gameObject.transform.position + new Vector3(0, 0.2f, 0);
-        
+
         //cube.transform.parent = gameObject.transform;
         cubeInstance.transform.localScale = new Vector3(0f,0f,0f);
         fireInstance.transform.localScale = new Vector3(0f,0f,0f);
@@ -40,7 +40,7 @@ public class magic : MonoBehaviour
 
         cubeInstance.transform.position = gameObject.transform.position + new Vector3(0,0.1f,0f);
         fireInstance.transform.position = gameObject.transform.position + new Vector3(0,0.05f,0);
-        
+
         //if (transform.position.z < 0.19 &&  transform.position.z > -0.19){
             //Color color = new Color32(9, 255, 255, 255);
             //main.startColor = color;
@@ -63,7 +63,7 @@ public class magic : MonoBehaviour
             }
             else{
                 cubeInstance.GetComponent<Renderer>().material.color = Color.green;
-            }   
+            }
         }
         else{
             cubeInstance.transform.localScale = new Vector3(0f,0f,0f);
@@ -105,7 +105,7 @@ public class magic : MonoBehaviour
                 break;
             }
         }
-        
+
         return foot;
     }*/
 }
